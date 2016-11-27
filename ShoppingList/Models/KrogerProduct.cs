@@ -18,7 +18,7 @@ namespace ShoppingList.Models
         public int offerQuantity { get; set; }
         public Double offerPrice { get; set; }
         public string offerType { get; set; }
-        public DateTime offerEndDate { get; set; }
+        public string offerEndDate { get; set; }
         public string sizing { get; set; }
         public Double currentPrice { get; set; }
         public String Self
