@@ -1,0 +1,106 @@
+﻿@model ShoppingList.Models.KrogerProduct
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>KrogerProduct</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.buyable)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.buyable)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.regularPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.regularPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.salePrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salePrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.offerQuantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.offerQuantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.offerPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.offerPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.offerType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.offerType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.offerEndDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.offerEndDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sizing)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sizing)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.currentPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.currentPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Self)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Self)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
