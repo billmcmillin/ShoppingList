@@ -9,6 +9,7 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using ShoppingList.Models;
+using ShoppingList.Filters;
 
 namespace ShoppingList.Controllers
 {
@@ -36,6 +37,7 @@ namespace ShoppingList.Controllers
         }
 
         // PUT: api/KrogerProds/5
+        [ValidateHttpAntiForgeryToken]
         [ResponseType(typeof(void))]
         public IHttpActionResult PutKrogerProduct(int id, KrogerProduct krogerProduct)
         {
@@ -71,6 +73,7 @@ namespace ShoppingList.Controllers
         }
 
         // POST: api/KrogerProds
+        [ValidateHttpAntiForgeryToken]
         [ResponseType(typeof(KrogerProduct))]
         public IHttpActionResult PostKrogerProduct(KrogerProduct krogerProduct)
         {
