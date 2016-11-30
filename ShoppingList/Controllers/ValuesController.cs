@@ -17,7 +17,7 @@ namespace ShoppingList.Controllers
         }
 
         // GET api/values/5
-        public string Get(int id)
+        public string Get(string upc)
         {
             return "value";
         }
@@ -28,12 +28,12 @@ namespace ShoppingList.Controllers
         }
 
         // PUT api/values/5
-        public void Put(int id, [FromBody]string value)
+        public void Put(string upc, [FromBody]string value)
         {
         }
 
         // DELETE api/values/5
-        public void Delete(int id)
+        public void Delete(string upc)
         {
         }
     }

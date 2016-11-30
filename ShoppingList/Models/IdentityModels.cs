@@ -22,6 +22,7 @@ namespace ShoppingList.Models
     {
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
+
         {
         }
         

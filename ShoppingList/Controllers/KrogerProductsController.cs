@@ -18,7 +18,7 @@ namespace ShoppingList.Controllers
         public ActionResult Index()
         {
             KrogerProduct kp = new KrogerProduct();
-            kp.populateDB();
+            //kp.populateDB();
             return View(db.KrogerProducts.ToList());
         }
 
