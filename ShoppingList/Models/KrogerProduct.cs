@@ -56,7 +56,7 @@ namespace ShoppingList.Models
         {
 
            
-            string jsonString = File.ReadAllText(@"C:\Users\Bill\Downloads\kroger3.json");
+            string jsonString = File.ReadAllText(@"C:\Users\Bill\Downloads\final3.json");
             System.Diagnostics.Debug.WriteLine("//////////////////////////////////");
 
             var root = JsonConvert.DeserializeObject<RootObject>(jsonString);
